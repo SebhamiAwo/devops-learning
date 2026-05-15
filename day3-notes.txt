@@ -1,0 +1,35 @@
+Day 3 - File Permissions in Linux
+
+PERMISSION TYPES
+r = read, you can open and view the file
+w = write, you can edit or delete the file
+x = execute, you can run the file as a program
+
+PERMISSION GROUPS
+owner = the person who created the file
+group = a set of users who share access
+others = everyone else on the system
+
+READING PERMISSIONS
+example: -rw-r--r--
+first character = file type, - means file, d means directory
+next three = owner permissions
+next three = group permissions
+last three = others permissions
+
+PERMISSION NUMBERS
+7 = read + write + execute, full access
+6 = read + write only
+5 = read + execute only
+4 = read only
+0 = no permissions at all
+
+COMMON PERMISSION SETS
+777 = everyone has full access, file turns green
+755 = owner has full access, everyone else can read and execute
+644 = owner can read and write, everyone else can only read
+
+CHMOD COMMAND
+chmod = Change Mode, changes permissions on a file or folder
+example: chmod 777 filename.txt = give everyone full access
+example: chmod 644 filename.txt = owner can read and write, others read only

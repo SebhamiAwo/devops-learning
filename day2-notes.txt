@@ -1,0 +1,37 @@
+Day 2 - Linux File System Navigation and File Management
+
+LINUX FILE SYSTEM STRUCTURE
+Everything in Linux starts from one place called root, written as /
+Think of it like the base of a tree, everything branches out from there.
+
+Main branches:
+/home = where all user personal folders live, yours is /home/awosebhami
+/etc = where system configuration files live
+/var = where logs and variable data live
+/tmp = temporary files, cleared on restart
+/bin = where commands like ls, cd and pwd live as programs
+
+FILE MANAGEMENT COMMANDS
+cp file1.txt file2.txt = copy a file, the original stays and a new copy is created
+example: cp file1.txt file1-backup.txt creates a copy called file1-backup.txt
+
+mv file1.txt file1-renamed.txt = rename a file, no / means rename in same folder
+mv file1.txt practice-folder/ = move a file, the / means move it into that folder
+the original disappears from its location and appears in the new location
+
+rm -rf foldername = delete a folder and everything inside it permanently
+WARNING: this is one of the most dangerous commands in Linux
+always run pwd first to confirm where you are before using rm -rf
+
+USEFUL TIPS
+spaces in commands separate different items
+example: touch file1.txt file2.txt creates two files at once
+example: mkdir folder1 folder2 creates two folders at once
+
+ls foldername/ = peek inside a folder without going into it
+the / after a folder name means go inside that folder
+
+DIFFERENCE BETWEEN CP AND MV
+cp = copies a file, like copying and pasting in Windows, original stays
+mv = moves a file, like cutting and pasting in Windows, original disappears
+mv can also rename a file if you give it a new name instead of a folder destination

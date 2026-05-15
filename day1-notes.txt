@@ -1,0 +1,36 @@
+Day 1 - My first Linux commands
+whoami = show current user
+
+Theory
+DevOps = Development Operations, it means merging the people who write software and the people who run and maintain it into one team with automated systems.
+
+Cloud Computing = instead of buying physical servers, you rent computing power, storage and internet over the companies like Amazon web services AWS, Azure or Google Cloud and only pay for what you use.
+
+AWS = Amazon Web Services, it is Amazon's cloud computing platform and the largest in the world. It powers companies like Netflix, Airbnb and NASA.
+
+WSL2 = Windows Subsystem for Linux. it lets you run a real Linux environment inside your Windows laptop without needing a separate machine.
+
+CI/CD = Continuous Integration and Continuous Delivery. Continuous Integration  means after it passes the test, it is automatically prepared and sent to the live server without anyone doing it manually.
+
+
+LINUX Commands
+
+whoami = asks the system who is currently logged in, it prints back your username.
+pwd = print working directory - tells you which folder you are currently standing in, like asking 'where am i?'
+cd = change directory - moves you into a folder, like double clicking a folder in windows explorer.
+cd ~ = takes you back to your home folder no matter where you are. The ~ symbol always means home.
+ls = lists everything inside the folder you are currently in, like opening a folder in Windows and seeing what is inside.
+mkdir = make directory, creates a new folder.
+touch = creates a new empty file, like creating a blank word document.
+echo "text" > file = writes text into a file. the > symbol means overwrite, so whatever was in the file before is deleted and replaced with the new text.
+echo "text" >> file = adds text to the bottom of a file. the >> symbol means append, so everything already in the file stays safe and the new text is added underneath.
+cat = reads and display everything inside a file, like opening a document to read it.
+rm = remove, permanently deletes a file. p.s linux has no recycle bin so deleted files are gone forever, always double check before using rm.
+nano = opens a simpe text editor inside the terminal like a basic notepad where you can type and edit files freely.
+
+Shortcuts
+
+ctrl + c = cancels or stops whatsever is currently running
+ctrl + l = clears the screen
+ctrl + z = pauses a running process
+ctrl + shift + v = paste inside the terminal

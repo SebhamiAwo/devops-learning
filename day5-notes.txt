@@ -1,0 +1,42 @@
+Day 5 - Shell Scripting
+
+WHAT IS A SHELL SCRIPT
+A file containing multiple commands that run automatically one after another
+Used for: automating repetitive tasks, setting up servers, 
+scheduling backups, deploying applications
+Shell script files end with .sh extension
+
+STRUCTURE OF A SHELL SCRIPT
+#!/bin/bash  = shebang, always first line, tells Linux to use bash
+# comment    = a note for humans, Linux ignores it
+commands     = the actual instructions
+
+VARIABLES
+NAME="Awosebhami"  = stores a value
+$NAME              = fetches and uses the stored value
+$ always means "the value of"
+
+COMMAND SUBSTITUTION
+DATE=$(date) = runs the date command and stores the result
+$() means run this command and store the output as a variable
+
+MAKING A SCRIPT EXECUTABLE
+chmod +x scriptname.sh = gives the script execute permission
+./scriptname.sh = runs the script from current location
+./ means look in my current folder
+
+IF STATEMENTS
+if [ condition ]
+then
+    do this if true
+else
+    do this if false
+fi
+
+-d foldername = checks if a directory exists
+fi = ends the if statement, it is if spelled backwards
+
+IMPORTANT NOTES
+Linux is case sensitive, Projects and projects are different
+Always put spaces inside square brackets [ -d projects ]
+Once you overwrite a script it is gone, Git in Phase 2 solves this

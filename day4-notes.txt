@@ -1,0 +1,33 @@
+Day 4 - Users and Groups in Linux
+
+KEY CONCEPTS
+user = anyone or anything that can log into the Linux system
+group = a collection of users who share the same permissions
+root = the superuser with unlimited access to everything
+sudo = a group that gives users temporary admin/root powers
+
+IMPORTANT COMMANDS
+whoami = shows your current username
+groups = shows all groups your user belongs to
+groups username = shows all groups a specific user belongs to
+
+sudo whoami = returns root, proving you have admin powers
+when you use sudo you temporarily become root
+
+MANAGING USERS
+sudo adduser username = creates a new user with a home folder
+sudo usermod -aG groupname username = adds a user to a group
+-a means append, keeps existing groups
+-G means groups, specifies which group to add to
+always use -aG together, never -G alone or existing groups are removed
+sudo deluser username = deletes a user
+
+USEFUL CONCEPTS
+cat /etc/passwd = file that stores all user information
+pipe | = takes output of left command and feeds it into right command
+grep = searches for a specific word in output
+example: cat /etc/passwd | grep testuser = find testuser in the users file
+
+every user gets a unique ID number starting from 1000
+your ID is 1000, new users get 1001, 1002 and so on
+every user gets a home folder automatically at /home/username

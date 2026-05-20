@@ -8,7 +8,7 @@ Goal: Become a job-ready DevOps Engineer
 ## Progress
 - [x] Phase 1 - Linux Fundamentals
 - [x] Phase 2 - Git and Version Control
-- [ ] Phase 3 - Docker and Containers
+- [x] Phase 3 - Docker and Containers
 - [ ] Phase 4 - AWS Cloud Computing
 - [ ] Phase 5 - CI/CD Pipelines
 - [ ] Phase 6 - Infrastructure as Code

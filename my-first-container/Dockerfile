@@ -1,4 +1,5 @@
 FROM ubuntu
 RUN apt-get update
-RUN apt-get install -y cowsay
-CMD ["/usr/games/cowsay", "Hello from my first container!"]
+COPY hello.sh /app/hello.sh
+RUN chmod +x /app/hello.sh
+CMD ["/app/hello.sh"]

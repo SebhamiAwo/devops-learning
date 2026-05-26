@@ -16,8 +16,8 @@ jobs:
       - name: Say Hello
         run: echo "Hello from my first CI/CD pipeline!"
 
-      - name: Show current directory
-        run: pwd
+      - name: Build Docker image
+        run: docker build -t my-webpage -f my-webpage/Dockerfile my-webpage/
 
-      - name: List files
-        run: ls
+      - name: Verify image was built
+        run: docker images

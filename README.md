@@ -10,7 +10,7 @@ Goal: Become a job-ready DevOps Engineer
 - [x] Phase 2 - Git and Version Control
 - [x] Phase 3 - Docker and Containers
 - [ ] Phase 4 - AWS Cloud Computing
-- [ ] Phase 5 - CI/CD Pipelines
+- [x] Phase 5 - CI/CD Pipelines
 - [ ] Phase 6 - Infrastructure as Code
 - [ ] Phase 7 - Kubernetes
 - [ ] Phase 8 - Monitoring
